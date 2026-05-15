@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Visuals | Graphic Design Agency</title>
+    
+       <!-- Updated Font: Bricolage Grotesque (Variable Font) -->
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#FFCC00', dark: '#000000', darkergray: '#0a0a0a', lightgray: '#1a1a1a' },
+                    fontFamily: { sans: ['Clash Display', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-white bg-dark">
+    
+    <div id="preloader"><div class="loader-circle"></div></div>
+    <div id="scroll-progress"></div>
+
+    <nav id="navbar" class="fixed w-full z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-2xl font-bold tracking-tighter">
+                    BRIGHT<span class="text-primary">VISUALS</span>.
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="hover:text-primary transition-colors">About</a>
+                    <a href="portfolio.html" class="hover:text-primary transition-colors">Portfolio</a>
+                    <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+                    <a href="contact.html" class="px-6 py-2 border border-primary text-primary hover:bg-primary hover:text-black rounded-full transition-all duration-300 font-semibold">Let's Talk</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-darkergray border-t border-white/10 absolute w-full">
+            <a href="index.html" class="block px-4 py-4 hover:text-primary border-b border-white/5">Home</a>
+            <a href="about.html" class="block px-4 py-4 hover:text-primary border-b border-white/5">About</a>
+            <a href="portfolio.html" class="block px-4 py-4 hover:text-primary border-b border-white/5">Portfolio</a>
+            <a href="services.html" class="block px-4 py-4 hover:text-primary border-b border-white/5">Services</a>
+            <a href="contact.html" class="block px-4 py-4 hover:text-primary">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="pt-32 pb-16 bg-darkergray relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up">Let's <span class="text-primary">Talk</span></h1>
+    <p class="text-gray-400 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Ready to start your next project? Get in touch.</p>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+        <p class="text-gray-400 mb-10">Whether you need a complete brand overhaul or a quick promotional flyer, we are here to bring your vision to life with precision and style.</p>
+        
+        <div class="space-y-8">
+          <div class="flex items-start">
+            <div class="w-12 h-12 bg-lightgray rounded-full flex items-center justify-center text-primary text-xl mr-4 shrink-0">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold">Email Us</h4>
+              <a href="mailto:franciscaleb024@gmail.com" class="text-gray-400 hover:text-primary transition-colors">franciscaleb024@gmail.com</a>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-12 h-12 bg-lightgray rounded-full flex items-center justify-center text-primary text-xl mr-4 shrink-0">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold">Call Us</h4>
+              <a href="tel:08141397763" class="text-gray-400 hover:text-primary transition-colors">08141397763</a>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-12 h-12 bg-lightgray rounded-full flex items-center justify-center text-primary text-xl mr-4 shrink-0">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold">WhatsApp</h4>
+              <a href="https://wa.me/2348141397763" target="_blank" class="text-gray-400 hover:text-primary transition-colors">Chat with us directly</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+      <div class="glass p-8 rounded-2xl border border-white/10" data-aos="fade-left">
+        <form action="mailto:franciscaleb024@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
+          <div>
+            <label class="block text-sm font-semibold mb-2 text-gray-300">Your Name</label>
+            <input type="text" name="Name" required class="w-full bg-lightgray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2 text-gray-300">Your Email</label>
+            <input type="email" name="Email" required class="w-full bg-lightgray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2 text-gray-300">Message</label>
+            <textarea name="Message" rows="4" required class="w-full bg-lightgray border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-primary text-black font-bold py-4 rounded-lg hover:bg-yellow-400 transition-colors shadow-[0_0_15px_rgba(255,204,0,0.3)] hover:shadow-[0_0_25px_rgba(255,204,0,0.5)]">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-darkergray pt-20 pb-10 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div class="col-span-1 md:col-span-2">
+        <a href="index.html" class="text-2xl font-bold tracking-tighter block mb-6">
+          BRIGHT<span class="text-primary">VISUALS</span>
+        </a>
+        <p class="text-gray-400 max-w-sm mb-6">Elevating brands through bold, premium, and functional design solutions.</p>
+        
+        <div class="flex space-x-4">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-black transition-all duration-300">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://x.com/VisualsbyBright" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-black transition-all duration-300">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/caleb-bright-b0865b354" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-black transition-all duration-300">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/2348141397763" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-black transition-all duration-300">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
+        <ul class="space-y-4 text-gray-400">
+          <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+          <li><a href="portfolio.html" class="hover:text-primary transition-colors">Portfolio</a></li>
+          <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-white">Contact</h4>
+        <ul class="space-y-4 text-gray-400">
+          <li><a href="mailto:franciscaleb024@gmail.com" class="hover:text-primary transition-colors"><i class="fas fa-envelope mr-2 text-primary"></i> franciscaleb024@gmail.com</a></li>
+          <li><a href="tel:08141397763" class="hover:text-primary transition-colors"><i class="fas fa-phone mr-2 text-primary"></i> 08141397763</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
+      &copy; 2026 Bright Visuals. All rights reserved.
+    </div>
+  </div>
+</footer>
+ 
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-black rounded-full flex items-center justify-center z-50 opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 shadow-[0_0_15px_rgba(255,204,0,0.4)]">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
