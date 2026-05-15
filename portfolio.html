@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Bright Visuals</title>
+    
+       <!-- Updated Font: Bricolage Grotesque (Variable Font) -->
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#FFCC00', dark: '#000000', darkergray: '#0a0a0a', lightgray: '#1a1a1a' },
+                    fontFamily: { sans: ['Clash Display', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-white bg-dark">
+    
+    <div id="preloader"><div class="loader-circle"></div></div>
+    <div id="scroll-progress"></div>
+
+    <nav id="navbar" class="fixed w-full z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-2xl font-bold tracking-tighter">
+                    BRIGHT<span class="text-primary">VISUALS</span>.
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="hover:text-primary transition-colors">About</a>
+                    <a href="portfolio.html" class="text-primary font-medium transition-colors">Portfolio</a>
+                    <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+                    <a href="contact.html" class="px-6 py-2 border border-primary text-primary hover:bg-primary hover:text-black rounded-full transition-all duration-300 font-semibold">Let's Talk</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-darkergray border-t border-white/10 absolute w-full">
+            <a href="index.html" class="block px-4 py-4 hover:text-primary border-b border-white/5">Home</a>
+            <a href="about.html" class="block px-4 py-4 hover:text-primary border-b border-white/5">About</a>
+            <a href="portfolio.html" class="block px-4 py-4 text-primary font-semibold border-b border-white/5">Portfolio</a>
+            <a href="services.html" class="block px-4 py-4 hover:text-primary border-b border-white/5">Services</a>
+            <a href="contact.html" class="block px-4 py-4 hover:text-primary">Contact</a>
+        </div>
+    </nav>
+<section class="pt-32 pb-16 bg-darkergray relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <h1 class="text-4xl md:text-6xl font-medium mb-4" data-aos="fade-up">Creative <span class="text-primary">Portfolio</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Explore our high-impact visual solutions crafted for modern brands.</p>
+    </div>
+</section>
+
+<section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-wrap justify-center gap-4 mb-16" data-aos="fade-up">
+            <button class="filter-btn active bg-primary text-black px-6 py-2 rounded-full font-semibold transition-all" data-filter="all">All</button>
+            <button class="filter-btn text-white border border-white/20 px-6 py-2 rounded-full hover:border-primary transition-all" data-filter="branding">Branding</button>
+            <button class="filter-btn text-white border border-white/20 px-6 py-2 rounded-full hover:border-primary transition-all" data-filter="social">Social Media Designs</button>
+            <button class="filter-btn text-white border border-white/20 px-6 py-2 rounded-full hover:border-primary transition-all" data-filter="flyer">Flyer Designs</button>
+        </div>
+        
+        <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="portfolio-item group relative overflow-hidden rounded-xl bg-lightgray transition-all duration-300" data-category="social" data-aos="fade-up">
+                <div class="aspect-square w-full overflow-hidden">
+                    <img src="clariocloud1.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-primary text-sm font-medium tracking-wider uppercase mb-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Social Media Designs</span>
+                    <h3 class="text-2xl font-medium text-white transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">Clario Cloud</h3>
+                    <p class="text-gray-300 text-sm mt-2 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100 italic">Web Hosting Solutions</p>
+                    <a href="clariocloud.html" class="mt-4 inline-block w-10 h-10 bg-primary text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform transform translate-y-4 group-hover:translate-y-0 duration-300 delay-150">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <footer class="bg-darkergray pt-20 pb-10 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                <a href="index.html" class="text-2xl font-medium tracking-tighter block mb-6">
+                    BRIGHT<span class="text-primary">VISUALS</span>
+                </a>
+                <p class="text-gray-400 max-w-sm mb-6">Elevating brands through bold, premium, and functional design solutions.</p>
+                
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-black transition-all duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/VisualsbyBright" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-black transition-all duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/caleb-bright-b0865b354" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-black transition-all duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/2348141397763" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary hover:text-black transition-all duration-300">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-medium mb-6 text-white">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+                    <li><a href="portfolio.html" class="hover:text-primary transition-colors">Portfolio</a></li>
+                    <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-medium mb-6 text-white">Contact</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="mailto:franciscaleb024@gmail.com" class="hover:text-primary transition-colors"><i class="fas fa-envelope mr-2 text-primary"></i> franciscaleb024@gmail.com</a></li>
+                    <li><a href="tel:08141397763" class="hover:text-primary transition-colors"><i class="fas fa-phone mr-2 text-primary"></i> 08141397763</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
+            &copy; 2026 Bright Visuals. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-black rounded-full flex items-center justify-center z-50 opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 shadow-[0_0_15px_rgba(255,204,0,0.4)]">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
